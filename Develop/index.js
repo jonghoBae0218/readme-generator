@@ -3,14 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [];
-
-
-
-// TODO: Create a function to initialize app
-function init() {
-    inquirer
-  .prompt([
+const questions = [
     {
       type: 'input',
       name: 'title',
@@ -50,12 +43,38 @@ function init() {
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'email',
+      message: 'Enter your Email adress',
     },
-  ])
+  ];
+
+let badgeArray =[
+    {company: 'Google', link: 'https://www.google.com'},
+    {company: 'Amazon', link: 'https://www.amazon.com'},
+    {company: 'Meta', link: 'https://www.google.com'},
+    {company: 'Netflix', link: 'https://meta.com'},
+    {company: 'Nvidia', link: 'https://nvidia.com'}
+  
+
+
+]
+
+function getCompanyUrl(license){
+    let reurnLink = ''
+    badgeArray.forEach((licenseCompany) =>{
+        if(licenseCompany.company === license){
+
+            returnLink = licenseCompany.link;
+        }
+    })
+    return returnLink
+};
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer
+  .prompt(questions)
   .then((answers) => {
-    console.log(answers);
     writeToFile('README.md', answers);
   });
 
@@ -75,9 +94,10 @@ let returnFile =  `# ${data.title}
 ## Description
 `
 const licenseArray = data.license;
-console.log(licenseArray);
 licenseArray.forEach(license => {
-    returnFile += ` <a src = "" alt="Contributors">\n<img src= https://img.shields.io/badge/${license}-8A2BE2 /></a>\n`
+    let companyUrl = getCompanyUrl(license);
+    console.log(companyUrl);
+    returnFile += ` <a href = "${companyUrl}" alt="Contributors">\n<img src= https://img.shields.io/badge/${license}-8A2BE2 /></a>\n`
 });
 
 
@@ -97,18 +117,16 @@ returnFile +=
 ${data.installation}
 
 
-
-
 ## Usage
 
 ${data.usage}
 
 
-## License`
+## License \n`
 
-console.log(licenseArray);
+
 licenseArray.forEach(license => {
-    returnFile += `${license} has license to this program\n`
+    returnFile += `${license} has license to this program\n\n`
 });
 
 
@@ -116,13 +134,15 @@ licenseArray.forEach(license => {
 returnFile += `
 ## Contributing
 
+${data.contribution}
+
 
 ## Tests
 
 
 ## Questions
-Link to gitHub: 
-Link to E-mail: 
+Github Repo: [${data.github}](https://github.com/${data.github})\n
+Please reach out via E-mail on: ${data.email} 
 `
 
 

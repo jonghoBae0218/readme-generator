@@ -1,13 +1,10 @@
-# a
+# 
 
 ## Description
- <a src = "" alt="Contributors">
-<img src= https://img.shields.io/badge/Google-8A2BE2 /></a>
- <a src = "" alt="Contributors">
-<img src= https://img.shields.io/badge/Meta-8A2BE2 /></a>
- <a src = "" alt="Contributors">
-<img src= https://img.shields.io/badge/Netflix-8A2BE2 /></a>
-b
+ <a src = "https://meta.com" alt="Contributors"><img src= https://img.shields.io/badge/Netflix-8A2BE2 /></a>
+ <a src = "https://nvidia.com" alt="Contributors"><img src= https://img.shields.io/badge/Nvidia-8A2BE2 /></a>
+
+ 
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -21,21 +18,26 @@ b
 
 
 
-
-
 ## Usage
 
 
 
 
-## LicenseGoogle has license to this program
-Meta has license to this program
+## License 
 Netflix has license to this program
+
+Nvidia has license to this program
+
+
 ## Contributing
+
+
 
 
 ## Tests
 
+
 ## Questions
-Link to gitHub: 
-Link to E-mail: 
+Github Repo: [](https://github.com/)
+
+Please reach out via E-mail on:  
