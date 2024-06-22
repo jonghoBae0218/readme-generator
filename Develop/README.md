@@ -1,8 +1,13 @@
 # a
 
 ## Description
-
-undefined
+ <a src = "" alt="Contributors">
+<img src= https://img.shields.io/badge/Google-8A2BE2 /></a>
+ <a src = "" alt="Contributors">
+<img src= https://img.shields.io/badge/Meta-8A2BE2 /></a>
+ <a src = "" alt="Contributors">
+<img src= https://img.shields.io/badge/Netflix-8A2BE2 /></a>
+b
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -13,23 +18,20 @@ undefined
 
 ## Installation
 
-c
+
 
 
 
 
 ## Usage
 
-d
 
 
-## License
- <a href="https://github.com/badges/shields/graphs/contributors" alt="Contributors">
-        <img src= https://img.shields.io/badge/just%20the%20message-8A2BE2 /></a>
 
-
+## LicenseGoogle has license to this program
+Meta has license to this program
+Netflix has license to this program
 ## Contributing
-
 
 
 ## Tests

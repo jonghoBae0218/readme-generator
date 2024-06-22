@@ -70,11 +70,20 @@ function writeToFile(fileName, data) {
 
 function formatReadMe(data){
 
-return `# ${data.title}
+let returnFile =  `# ${data.title}
 
 ## Description
+`
+const licenseArray = data.license;
+console.log(licenseArray);
+licenseArray.forEach(license => {
+    returnFile += ` <a src = "" alt="Contributors">\n<img src= https://img.shields.io/badge/${license}-8A2BE2 /></a>\n`
+});
 
-${data.description}
+
+
+returnFile += 
+`\n ${data.description}
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -95,21 +104,30 @@ ${data.installation}
 ${data.usage}
 
 
-## License
- <a href="https://github.com/badges/shields/graphs/contributors" alt="Contributors">
-        <img src= https://img.shields.io/badge/just%20the%20message-8A2BE2 /></a>
+## License`
+
+console.log(licenseArray);
+licenseArray.forEach(license => {
+    returnFile += `${license} has license to this program\n`
+});
 
 
+
+returnFile += `
 ## Contributing
 
 
-
 ## Tests
+
 
 ## Questions
 Link to gitHub: 
 Link to E-mail: 
 `
+
+
+
+return returnFile;
 }
 
 // Function call to initialize app
