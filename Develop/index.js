@@ -30,10 +30,17 @@ const questions = [
         message: 'Give list of licenses',
         choices: [ 'Google', 'Amazon', 'Meta','Netflix', 'Nvidia' ],
 
-    },{
+    },
+    {
         type: 'input',
         name: 'contribution',
         message: 'Give contribution guidelines',
+
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Give testing guidelines',
 
     },
     {
@@ -48,6 +55,7 @@ const questions = [
     },
   ];
 
+// Make an array of license badges for future use
 let badgeArray =[
     {company: 'Google', link: 'https://www.google.com'},
     {company: 'Amazon', link: 'https://www.amazon.com'},
@@ -59,6 +67,7 @@ let badgeArray =[
 
 ]
 
+//This method returns the url of the license company using badgeArray.
 function getCompanyUrl(license){
     let reurnLink = ''
     badgeArray.forEach((licenseCompany) =>{
@@ -87,12 +96,15 @@ function writeToFile(fileName, data) {
     );
 }
 
+// Helper method of writeToFile function. it formats readme file.
 function formatReadMe(data){
 
 let returnFile =  `# ${data.title}
 
 ## Description
 `
+
+// Adds badges right below the description section. 
 const licenseArray = data.license;
 licenseArray.forEach(license => {
     let companyUrl = getCompanyUrl(license);
@@ -100,8 +112,7 @@ licenseArray.forEach(license => {
     returnFile += ` <a href = "${companyUrl}" alt="Contributors">\n<img src= https://img.shields.io/badge/${license}-8A2BE2 /></a>\n`
 });
 
-
-
+// After adding badges, add rest of the readme file contents
 returnFile += 
 `\n ${data.description}
 
@@ -111,6 +122,8 @@ returnFile +=
 3. [License](#license)
 4. [Contributing](#contributing)
 5. [Tests](#tests)
+6. [Questions](#questions)
+
 
 ## Installation
 
@@ -124,13 +137,13 @@ ${data.usage}
 
 ## License \n`
 
-
+//Add the licenses to license section.
 licenseArray.forEach(license => {
     returnFile += `${license} has license to this program\n\n`
 });
 
 
-
+// Continue adding readme
 returnFile += `
 ## Contributing
 
@@ -139,14 +152,16 @@ ${data.contribution}
 
 ## Tests
 
+${data.test}
+
 
 ## Questions
 Github Repo: [${data.github}](https://github.com/${data.github})\n
 Please reach out via E-mail on: ${data.email} 
 `
+//Readme formatting done.
 
-
-
+// Return the formatted text
 return returnFile;
 }
 
