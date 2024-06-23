@@ -1,54 +1,34 @@
-# a
+# Readme Generator
 
 ## Description
- <a href = "https://www.amazon.com" alt="Contributors">
-<img src= https://img.shields.io/badge/Amazon-8A2BE2 /></a>
- <a href = "https://www.google.com" alt="Contributors">
-<img src= https://img.shields.io/badge/Meta-8A2BE2 /></a>
- <a href = "https://meta.com" alt="Contributors">
-<img src= https://img.shields.io/badge/Netflix-8A2BE2 /></a>
- <a href = "https://nvidia.com" alt="Contributors">
-<img src= https://img.shields.io/badge/Nvidia-8A2BE2 /></a>
+ This is a readme generator that receives informtation from console and makes readme file
 
- b
+## Features
 
-## Table of Contents
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [License](#license)
-4. [Contributing](#contributing)
-5. [Tests](#tests)
-6. [Questions](#questions)
+1. Badges right below the description section will naviage user to the respective website.
+2. Table of contents tab will navigate user to the respective section in the document.
 
 
-## Installation
+## Installation Instructions
 
-c
+1. Call npm init -y  to install package.json
+2. call npm i inquirer@8 to install inquirer package. do @8 for compatability
+3. Call npm i fs to install writefile package.
+4. Type node index to launch application.
 
+## Using instructions
 
-## Usage
+The image below shows the questions to be shown when calling the application.
 
-d
+Give list of lisences will be a checkbox format. Press space for all the relevant licenses and press enter.
 
-
-## License 
-Amazon has license to this program
-
-Meta has license to this program
-
-Netflix has license to this program
-
-Nvidia has license to this program
-
-
-## Contributing
-
-e
+![Terminal prompt](<../assets/images/Prompt_screenshot.png>)
 
 
 ## Tests
+Link to testing video: 
+file:///Users/jonghobae/Downloads/Untitled_%20Jun%2022,%202024%209_39%20PM.webm
 
-f
 
 
 ## Questions
