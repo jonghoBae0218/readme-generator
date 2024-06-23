@@ -20,14 +20,14 @@
 
 The image below shows the questions to be shown when calling the application.
 
-Give list of lisences will be a checkbox format. Press space for all the relevant licenses and press enter.
+Give list ofsences will be a checkbox format. Press space for all the relevant licenses and press enter.
 
 ![Terminal prompt](<./assets/images/Prompt_screenshot.png>)
 
 
 ## Tests
 Link to testing video: 
-file:///Users/jonghobae/Downloads/Untitled_%20Jun%2022,%202024%209_39%20PM.webm
+https://drive.google.com/file/d/1vqRma7D2_Bvwu7YmEnQ1VyaRiW8xcHIx/view?usp=drive_link
 
 
 
