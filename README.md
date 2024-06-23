@@ -22,7 +22,7 @@ The image below shows the questions to be shown when calling the application.
 
 Give list of lisences will be a checkbox format. Press space for all the relevant licenses and press enter.
 
-![Terminal prompt](<../assets/images/Prompt_screenshot.png>)
+![Terminal prompt](<./assets/images/Prompt_screenshot.png>)
 
 
 ## Tests
