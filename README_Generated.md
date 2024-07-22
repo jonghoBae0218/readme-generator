@@ -1,14 +1,12 @@
-# Readme generator
+# Title 1
 
 ## Description
- <a href = "https://www.amazon.com" alt="Contributors">
-<img src= https://img.shields.io/badge/Amazon-8A2BE2 /></a>
  <a href = "https://www.google.com" alt="Contributors">
-<img src= https://img.shields.io/badge/Meta-8A2BE2 /></a>
- <a href = "https://nvidia.com" alt="Contributors">
-<img src= https://img.shields.io/badge/Nvidia-8A2BE2 /></a>
+<img src= https://img.shields.io/badge/Google-8A2BE2 /></a>
+ <a href = "https://meta.com" alt="Contributors">
+<img src= https://img.shields.io/badge/Netflix-8A2BE2 /></a>
 
- Description section. (Padding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding text)
+ Description i
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -21,33 +19,31 @@
 
 ## Installation
 
-Installation explanation (Padding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding text)
+Explanation example
 
 
 ## Usage
 
-Usage section (Padding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding text)
+ABCD
 
 
 ## License 
-Amazon has license to this program
+Google has license to this program
 
-Meta has license to this program
-
-Nvidia has license to this program
+Netflix has license to this program
 
 
 ## Contributing
 
-Contribution section (Padding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding text)
+Guide 1
 
 
 ## Tests
 
-Testing section (Padding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding textPadding text)
+Test guide 2
 
 
 ## Questions
 Github Repo: [jonghoBae0218](https://github.com/jonghoBae0218)
 
-Please reach out via E-mail on: jb4918@columbia.edu 
+Please reach out via E-mail on: jb4918@golumbia.edu 
